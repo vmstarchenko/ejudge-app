@@ -1,0 +1,50 @@
+ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-wrapper {
+  margin: 10px;
+}
+
+ul li, header-wrapper {
+  position: relative;
+}
+
+body {
+  position: relative;
+  margin: 5px;
+  width: 200px;
+}
+
+.options {
+  top: 0;
+  left: 0;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input[type="checkbox"], .btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+
+.opt-title {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}

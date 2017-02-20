@@ -1,0 +1,111 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "Ejudge+",
+  "version": "1.0",
+
+  // Recommended
+  "icons": {
+    "16": "img/main16.png",
+    "32": "img/main32.png",
+    "48": "img/main48.png",
+    "128":"img/main128.png"
+  },
+
+  "description": "Ejudge tools",
+  // "icons": {...},
+
+  // Pick one (or none)
+  "page_action": {
+    "default_popup": "html/popup.html",
+    "default_title": "Ejudge+"
+  },
+
+  //   "page_action": {...},
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "permissions": ["tabs", "storage"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://ejudge.cs.hse.ru/*", "http://ejudge.cs.hse.ru/*"],
+      "css": ["css/style.css"],
+      "js": ["js/userscript.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "img/logo.png"
+  ],
+
+  "options_page": "html/options.html"
+
+  //   // Optional
+  //   "author": "vmstarchenko",
+  //   "background": {
+  //     // Recommended
+  //     "persistent": false
+  //   },
+  //   "background_page": ...,
+  //   "chrome_settings_overrides": {...},
+  //   "chrome_ui_overrides": {
+  //     "bookmarks_ui": {
+  //       "remove_bookmark_shortcut": true,
+  //       "remove_button": true
+  //     }
+  //   },
+  //   "chrome_url_overrides": {...},
+  //   "commands": {...},
+  //   "content_capabilities": ...,
+  //   "content_scripts": [{...}],
+  //   "content_security_policy": "policyString",
+  //   "converted_from_user_script": ...,
+  //   "current_locale": ...,
+  //   "devtools_page": "devtools.html",
+  //   "event_rules": [{...}],
+  //   "externally_connectable": {
+  //     "matches": ["*://*.example.com/*"]
+  //   },
+  //   "file_browser_handlers": [...],
+  //   "file_system_provider_capabilities": {
+  //     "configurable": true,
+  //     "multiple_mounts": true,
+  //     "source": "network"
+  //   },
+  //   "homepage_url": "http://path/to/homepage",
+  //   "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
+  //   "incognito": "spanning, split, or not_allowed",
+  //   "input_components": ...,
+  //   "key": "publicKey",
+  //   "minimum_chrome_version": "versionString",
+  //   "nacl_modules": [...],
+  //   "oauth2": ...,
+  //   "offline_enabled": true,
+  //   "omnibox": {
+  //     "keyword": "aString"
+  //   },
+  //   "optional_permissions": ["tabs"],
+  //   "options_page": "options.html",
+  //   "options_ui": {
+  //     "chrome_style": true,
+  //     "page": "options.html"
+  //   },
+  //   "permissions": ["tabs"],
+  //   "platforms": ...,
+  //   "plugins": [...],
+  //   "requirements": {...},
+  //   "sandbox": [...],
+  //   "short_name": "Short Name",
+  //   "signature": ...,
+  //   "spellcheck": ...,
+  //   "storage": {
+  //     "managed_schema": "schema.json"
+  //   },
+  //   "system_indicator": ...,
+  //   "tts_engine": {...},
+  //   "update_url": "http://path/to/updateInfo.xml",
+  //   "version_name": "aString",
+  //   "web_accessible_resources": [...]
+}

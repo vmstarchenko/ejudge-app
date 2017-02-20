@@ -1,0 +1,323 @@
+
+html,
+html body,
+html #main-cont,
+html #container {
+  left: 0;
+  right: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  shadow: none;
+  box-shadow: none;
+  background: #ffffff;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+html td#probNavTaskArea {
+  border: none;
+  border-bottom: none;
+}
+
+html #main-cont #l12 {
+  top: 0;
+}
+
+html #l12 {
+  top: 0;
+}
+
+#main-cont #l12-col { /* header */
+  shadow: none;
+  background: #CFA6E7;
+  padding: 0;
+}
+
+/* logo */
+#main-cont #l11 img {
+  display: none;
+}
+
+#main-cont #l11 {
+  /* height: 100%; <--------------- */
+  border: 3px 10px 3px 3px;
+  background: url('chrome-extension://__MSG_@@extension_id__/img/logo.png') no-repeat;
+  background-size: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+/* title */
+#main-cont #l12 .main_phrase {
+  text-shadow: none;
+  margin-left: 180px;
+  opacity: 0;
+  font-size: 1.5em;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+
+/* top menu */
+html #main-menu,
+html #main-cont div.user_actions {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  padding-left: 135px;
+}
+
+
+html #main-cont #main-menu,
+html #main-cont div.user_actions {
+  min-height: 64px;
+  height: 64px;
+}
+
+html #main-menu ul li .current,
+html #main-menu ul li.current {
+  background: #A865CF !important;
+  font-weight: 100;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+html #main-cont #main-menu ul {
+  padding-left: 0;
+}
+
+html #main-menu ul li a,
+html #main-menu ul li.active,
+html #main-cont div.user_action_item { /* main-menu buttons*/
+  text-shadow: none;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+
+html #main-cont div.user_action_item {
+  text-transform: capitalize;
+}
+
+html #main-cont #main-menu,
+html #main-cont #main-menu ul,
+html #main-cont #main-menu li,
+html #main-cont #main-menu .current,
+html #main-cont #main-menu .contest_actions_item,
+html #main-cont div.user_actions,
+html #main-cont div.contest_actions {
+  background: #A865CF;
+  border: 0;
+  shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: #ffffff;
+}
+
+html #main-cont #main-menu li {
+  padding: 5px;
+}
+
+html td.b0 {
+  padding: 0;
+}
+
+html td.b0 div {
+  padding: 2px 5px;
+}
+
+
+/* task list */
+html div.probOk { /* ok(green) */
+  background: none;
+  border: 0;
+  text-shadow: none;
+  box-shadow: none;
+  background: #A9F0A9;
+  cursor: pointer;
+}
+html div.probOk:hover {
+  background: #67E667
+}
+
+html div.probBad { /* bad */
+  background: none;
+  border: 0;
+  text-shadow: none;
+  background: #FFB1B1;
+  cursor: pointer;
+}
+
+html div.probBad:hover {
+  background: #FF7373;
+}
+
+html #probNavRightList { /* main */
+  border: 0;
+  background: #ffffff;
+  box-shadow: none;
+  padding-top: 0;
+}
+
+html div.probEmpty { /* new */
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+html div.probEmpty:hover { /* new */
+  background-color: #b0b0b0;
+}
+
+
+html div.probCurrent { /* active */
+  background: #CF79FF;
+  color: #ffffff;
+}
+
+html .nBottomNavList li a,
+html .nTopNavList li a,
+html A.tab:visited  {
+  color: #000000;
+  text-shadow: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+html .nBottomNavList li a:hover,
+html .nTopNavList li a:hover,
+html A.tab:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+html div.server_status_error,
+html div.server_status_alarm,
+html div.server_status_off,
+html div.server_status_on {
+  box-shadow: none;
+  background: #e0e0e0;
+  border: 0;
+  text-shadow: none;
+}
+
+/* result table */
+html .l14 {
+  width: 1100px !important;
+  overflow-x: scroll;
+  position: relative;
+  border: 1px solid #000000;
+  margin: 1em;
+}
+
+html #l13 .st_team,
+html #l13 .st_place {
+  top: auto;
+  position: absolute;
+  background: #ffffff;
+}
+
+html #l13 .st_team {
+  left: 6em;
+  width: 15em;
+}
+
+html #l13 .st_place {
+  left: 12px;
+  width: 6em;
+}
+
+html #l13 table.standings {
+  margin-left: 215px;
+  margin-bottom: 0;
+}
+
+html #l13 table.standings tbody {
+  border-right: 1px solid #000000;
+}
+
+
+html .l14,
+html #l13 table.standings,
+html #l13 table.standings tbody,
+html #l13 table.standings tbody tr {
+  position: static;
+}
+
+html #l13 TD.st_team,
+html #l13 TH.st_team {
+  border-right: 3px solid #000000;
+}
+
+html #l13 TH.st_team,
+html #l13 TH.st_place,
+html #l13 TD.st_team,
+html #l13 TD.st_place {
+  margin: 0;
+}
+
+html #l13 TH,
+html #l13 td {
+  height: 30px;
+}
+
+
+/* other */
+html .table,
+html table.standings {
+  box-shadow: none;
+  border: 0;
+}
+
+html .table th,
+html .table th,
+html .table .th,
+html table.standings th {
+  background: #CF79FF;
+  text-shadow: none;
+  border: 1px solid #000;
+}
+
+html .table tr {
+  text-shadow: none;
+  border: 1px solid #000;
+}
+
+html input[type="submit"],
+html input[type="button"],
+html select {
+  background: #ffffff;
+  border: 1px solid #CF79FF;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+html .h2-long h2 {
+  text-shadow: none;
+  box-shadow: none;
+  background: #A865CF;
+  border: 0;
+  border-radius: 0;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+html .info-table-line {
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+}
+
+html .info-table-line tbody {
+  margin: 3px;
+  padding: 3px;
+}
+
+html table.b0 {
+  border-style: solid;
+}
