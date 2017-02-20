@@ -89,10 +89,6 @@ html #main-menu ul li.current {
   text-shadow: none;
 }
 
-html #main-cont #main-menu ul {
-  padding-left: 0;
-}
-
 html #main-menu ul li a,
 html #main-menu ul li.active,
 html #main-cont div.user_action_item { /* main-menu buttons*/
@@ -121,8 +117,15 @@ html #main-cont div.contest_actions {
   color: #ffffff;
 }
 
-html #main-cont #main-menu li {
-  padding: 5px;
+html #main-cont #main-menu li a,
+html #main-cont #main-menu li.current {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+html #main-cont #main-menu li.current:hover {
+  
 }
 
 html td.b0 {
@@ -142,6 +145,10 @@ html div.probOk { /* ok(green) */
   box-shadow: none;
   background: #A9F0A9;
   cursor: pointer;
+  /* border-left: 1px solid #57e657; */
+  /* border-bottom: 1px solid #57e657; */
+  /* border-radius: 3px; */
+  /* margin-bottom: 1px; */
 }
 html div.probOk:hover {
   background: #67E667
@@ -153,6 +160,10 @@ html div.probBad { /* bad */
   text-shadow: none;
   background: #FFB1B1;
   cursor: pointer;
+  /* border-left: 1px solid #FF6343; */
+  /* border-bottom: 1px solid #FF6343; */
+  /* border-radius: 3px; */
+  /* margin-bottom: 1px; */
 }
 
 html div.probBad:hover {

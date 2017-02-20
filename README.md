@@ -7,6 +7,8 @@
 ## Usage
 - Табличку результатов можно скроллить.
 - Значок расширения -> Жамкаешь на шестеренку --- открывается фильтры списка задачек.
+![alt text](https://github.com/vmstarchenko/ejudge-app/raw/master/src/img/example.jpg "Example")
+
 
 ## Todo
 - [ ] Написать readme

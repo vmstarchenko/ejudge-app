@@ -16,12 +16,6 @@ ul li, header-wrapper {
   position: relative;
 }
 
-body {
-  position: relative;
-  margin: 5px;
-  width: 200px;
-}
-
 .options {
   top: 0;
   left: 0;

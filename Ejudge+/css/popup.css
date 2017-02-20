@@ -1,0 +1,14 @@
+body {
+  position: relative;
+  margin: 5px;
+  width: 200px;
+}
+
+a {
+  font-weight: 900;
+  color: #000000;
+}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
