@@ -30,7 +30,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://ejudge.cs.hse.ru/*", "http://ejudge.cs.hse.ru/*"],
+      "matches": ["http://caos.ejudge.ru/*", "http://caos.ejudge.ru/*"],
       "css": ["css/style.css"],
       "js": ["js/userscript.js"]
     }

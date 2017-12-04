@@ -8,6 +8,7 @@ function parseInfo(title) {
   if (res) {
     res = [res[1].trim(), res[2].trim()]
     if (res[0] !== "User login page")
+      console.log(res);
       return res
   }
 }
