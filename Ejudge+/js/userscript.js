@@ -1,21 +1,20 @@
 // fix title
 var info;
 
-var infoRegExp = /([a-zA-Zа-яА-Я ]+)\[.*(15[0-9]-[12])/;
+var infoRegExp = /([a-zA-Zа-яА-Я ]+)\[.*(16[0-9]-[12])/;
 
 function parseInfo(title) {
   var res = title.match(infoRegExp);
   if (res) {
     res = [res[1].trim(), res[2].trim()]
     if (res[0] !== "User login page")
-      console.log(res);
       return res
   }
 }
 
 function updateTitle() {
   title = document.querySelector('#l12 .main_phrase');
-  info = parseInfo(title.innerHTML);
+  info = parseInfo(title.innerText);
   title.innerHTML = "Кокосик";
   title.style.opacity = "1";
 }
