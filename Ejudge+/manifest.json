@@ -2,7 +2,7 @@
   // Required
   "manifest_version": 2,
   "name": "Ejudge+",
-  "version": "1.0",
+  "version": "1.1",
 
   // Recommended
   "icons": {
@@ -30,7 +30,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://ejudge.cs.hse.ru/*", "http://ejudge.cs.hse.ru/*"],
+      "matches": ["http://caos.ejudge.ru/*", "http://caos.ejudge.ru/*"],
       "css": ["css/style.css"],
       "js": ["js/userscript.js"]
     }
@@ -40,7 +40,7 @@
     "img/logo.png"
   ],
 
-  "options_page": "html/options.html"
+  "options_page": "html/popup.html"
 
   //   // Optional
   //   "author": "vmstarchenko",

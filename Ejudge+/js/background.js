@@ -4,7 +4,7 @@ function updatePopup(tabId, tab) {
 }
 
 function checkUrl(tabId, changeInfo, tab){
-  var re = /.*ejudge.cs.hse.ru.*/;
+  var re = /.*caos.ejudge.ru.*/;
 
   if (re.test(tab.url)){
     chrome.pageAction.show(tabId);

@@ -53,7 +53,7 @@ html #l12 {
 /* title */
 #main-cont #l12 .main_phrase {
   text-shadow: none;
-  margin-left: 180px;
+  margin-left: 170px;
   opacity: 0;
   font-size: 1.5em;
   font-weight: 100;
@@ -73,11 +73,14 @@ html #main-cont div.user_actions {
   padding-left: 135px;
 }
 
+.userpic-img-upage {
+  margin-left: 2px !important;
+}
 
 html #main-cont #main-menu,
 html #main-cont div.user_actions {
-  min-height: 64px;
-  height: 64px;
+  min-height: 22px;
+  height: 22px;
 }
 
 html #main-menu ul li .current,
@@ -116,6 +119,40 @@ html #main-cont div.contest_actions {
   text-shadow: none;
   color: #ffffff;
 }
+
+
+html #main-cont div.user_actions,
+html #main-cont div.contest_actions {
+  height: 22px;
+  width: 100%;
+}
+
+
+html #main-cont div.contest_actions {
+  margin-left: 0px;
+  padding-left: 125px;
+}
+
+
+html #main-cont div.contest_actions_item {
+  color: white;
+  shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  /* height: 30px; */
+}
+
+html #main-cont div.contest_actions_item td.menu {
+  height: 22px;
+}
+
+html #main-cont div.contest_actions_item a.menu {
+  color: white;
+  font-size: 14px;
+  height: 22px;
+  font-weight: normal;
+}
+
 
 html #main-cont #main-menu li a,
 html #main-cont #main-menu li.current {
@@ -309,6 +346,13 @@ html select {
   cursor: pointer;
 }
 
+
+html .h2-long {
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+}
+
+
 html .h2-long h2 {
   text-shadow: none;
   box-shadow: none;
@@ -317,6 +361,7 @@ html .h2-long h2 {
   border-radius: 0;
   font-weight: 100;
   color: #ffffff;
+  margin-left:-4px;
 }
 
 html .info-table-line {
